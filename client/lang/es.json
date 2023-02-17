@@ -1,0 +1,23 @@
+{
+    "langue": "Lengua",
+    "bonjour": "Bonjour",
+    "passer-commande": "Passer commande",
+    "collecte": "Collecte",
+    "choix-de-l-offre": "Choix de l'offre",
+    "restitution": "Restitution",
+    "validation": "Validation",
+    "quand-et-ou-souhaitez-vous-que-l-on-collecte-votre-linge": "Quand et où souhaitez vous que l'on collecte votre linge",
+    "adresse-de-collecte-du-linge": "Adresse de collecte du linge",
+    "je-laisse-mon-linge-a-la-reception-de-l-hotel": "Je laisse mon linge à la réception de l'hôtel",
+    "informations-complementaires": "Informations complémentaires (digicode, nom de l'hôtel ...)",
+    "selectionnez-une-date": "Selectionnez une date",
+    "selectionnez-une-heure": "Selectionnez une heure",
+    "enregistrer-et-continuer": "Enregistrer et continuer",
+    "connexion": "Connexion",
+    "email": "Adresse mail",
+    "mot-de-passe": "Mot de passe",
+    "se-connecter": "Se connecter",
+    "ou": "ou",
+    "vous-n-avez-pas-de-compte": "Vous n'avez pas encore de cmpte",
+    "creer-un-compte": "Créer un compte"
+}
