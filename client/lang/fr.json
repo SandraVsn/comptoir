@@ -18,7 +18,15 @@
     "mot-de-passe": "Mot de passe",
     "se-connecter": "Se connecter",
     "ou": "ou",
-    "vous-n-avez-pas-de-compte": "Vous n'avez pas encore de cmpte",
+    "vous-n-avez-pas-de-compte": "Vous n'avez pas encore de compte",
     "creer-un-compte": "Créer un compte",
-    "exemple": "exemple"
+    "exemple": "exemple",
+    "inscription": "Inscription",
+    "prenom": "Prénom",
+    "nom": "Nom",
+    "confirmer-mot-de-passe": "Confirmer votre mot de passe",
+    "telephone": "Numéro de téléphone",
+    "whatsapp": "Je suis joignable sur Whatsapp",
+    "mail-promotionel": "J'accepte de recevoir des emails promotionnels"
+
 }

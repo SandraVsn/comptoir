@@ -9,7 +9,7 @@
       <div class="mx-auto max-w-sm w-full flex flex-col">
         <!--  Titre de la page  -->
         <h2
-          class="mt-6 text-3xl font-bold font-title tracking-tight text-primary text-center"
+          class="my-6 text-3xl font-bold font-title tracking-tight text-primary text-center"
         >
           {{ $t('connexion') }}
         </h2>
@@ -17,10 +17,10 @@
         <span class="bg-white px-2 text-center text-sm text-gray-500"
           >{{ $t('vous-n-avez-pas-de-compte') }} ?</span
         >
-        <a
-          href="#"
+        <NuxtLink
+          to="/inscription"
           class="font-medium text-primary-light mt-3 text-center text-sm underline underline-offset-2 hover:text-primary"
-          >{{ $t('creer-un-compte') }}</a
+          >{{ $t('creer-un-compte') }}</NuxtLink
         >
       </div>
     </div>

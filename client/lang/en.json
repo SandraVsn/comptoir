@@ -20,5 +20,12 @@
     "ou": "or",
     "vous-n-avez-pas-de-compte": "Don't have an account yet",
     "creer-un-compte": "Create an account",
-    "exemple": "example"
+    "exemple": "example",
+    "inscription": "Sign in",
+    "prenom": "First name",
+    "nom": "Last name",
+    "confirmer-mot-de-passe": "Confirm your password",
+    "telephone": "Phone number",
+    "whatsapp": "I am available on Whatsapp",
+    "mail-promotionel": "I accept to receive promotional offers"
 }
