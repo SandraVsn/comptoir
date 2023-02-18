@@ -16,7 +16,7 @@
         :placeholder="placeholder ? placeholder : $t(`${name}`)"
         :autocomplete="autocomplete ? name : 'off'"
         :required="required"
-        class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none sm:text-sm focus:ring-primary focus:border-primary"
+        class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
       />
     </div>
   </div>

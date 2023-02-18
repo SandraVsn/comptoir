@@ -1,7 +1,7 @@
 <template>
   <button
     type="submit"
-    class="rounded-md border border-transparent bg-primary-light py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:primary focus:ring-primary focus:ring-offset-2"
+    class="rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-primary-light transition-colors duration-300 focus:outline-none focus:ring-2 focus:primary focus:ring-primary-light focus:ring-offset-2"
     :class="block ? 'w-full' : ''"
   >
     {{ $t(`${name}`) }}

@@ -27,5 +27,21 @@
     "confirmer-mot-de-passe": "Confirm your password",
     "telephone": "Phone number",
     "whatsapp": "I am available on Whatsapp",
-    "mail-promotionel": "I accept to receive promotional offers"
+    "mail-promotionel": "I accept to receive promotional offers", 
+    "valider": "Submit",
+    "telephone-invalide-chiffre": "Phone number can only contain integers",
+    "telephone-invalide-min": "Phone number must have at least 7 numbers",
+    "telephone-invalide-max": "Phone number must have maximum 15 numberss",
+    "telephone-requis": "Phone number is required",
+    "code-pays-requis": "Country code is required",
+    "confirmation-mdp-invalide": "toto",
+    "confirmation-mdp-requise": "toto",
+    "mot-de-passe-requis": "toto",
+    "email-format-invalide": "toto",
+    "email-requis": "toto",
+    "nom-requis": "toto",
+    "prenom-requis": "toto",
+    "format-mdp-incorrect": "toto",
+    "mdp-longueur-mini": "toto",
+    "mdp-longueur-maxi": "toto"
 }

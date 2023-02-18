@@ -14,6 +14,9 @@ module.exports = {
         sans: ['Montserrat', 'sans-serif'],
         title: ['"Amatic SC"', 'serif'],
       },
+      fontSize: {
+        xsm: '0.7rem',
+      },
       colors: {
         primary: {
           DEFAULT: '#4F9281',
