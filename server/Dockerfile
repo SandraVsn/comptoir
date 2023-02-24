@@ -8,6 +8,7 @@ RUN npm i
 
 COPY tsconfig.json ./
 COPY nest-cli.json ./
+COPY prisma ./prisma
 COPY src ./src
 COPY ./.env .env
 

@@ -1,0 +1,259 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Availability {
+  id: Int!
+  beginningDate: DateTime!
+  endindDate: DateTime!
+  user: User!
+  userId: Int!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Delivery {
+  id: Int!
+  adress: String!
+  postCode: Int!
+  city: String!
+  moreInfos: String
+  deliveredByHand: Boolean!
+  deliveryDate: DateTime!
+  deliveryType: DeliveryType!
+  order: Order!
+  orderId: Int!
+}
+
+enum DeliveryType {
+  PICK_UP
+  DELIVERY
+}
+
+type OptionType {
+  id: Int!
+  name: String!
+  price: Float!
+  description: String!
+  offerTypes: [OfferType]!
+}
+
+type OfferType {
+  id: Int!
+  name: String!
+  packPrice: Float!
+  kiloPrice: Float!
+  smallDescription: String!
+  bigDestription: String!
+  image: String!
+  offers: [Offer]!
+  options: OptionType!
+}
+
+type Offer {
+  id: Int!
+  order: Order!
+  orderId: Int!
+  offerType: OfferType!
+  offerTypeId: Int!
+}
+
+type Order {
+  id: Int!
+  createdAt: DateTime!
+  createdBy: String!
+  status: OrderStatus!
+  price: Float
+  paymentType: PaymentType
+  paid: Boolean
+  user: User!
+  userId: Int!
+  deliveries: [Delivery]!
+  offers: [Offer]!
+}
+
+enum OrderStatus {
+  TO_COLLECT
+  COLLECTED
+  WASHED
+  RETURNED
+}
+
+enum PaymentType {
+  CREDIT_CARD
+  CASH
+  TRANSFERT
+}
+
+type User {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String
+  phoneCode: Int!
+  phoneNumber: Int!
+  isOnWhatsApp: Boolean!
+  adress: String
+  postCode: Int
+  city: String
+  clientType: ClientType
+  isActive: Boolean!
+  acceptPublicity: Boolean!
+  adminComm: String
+  role: UserRole!
+  resetPasswordToken: String
+  resetPasswordExpires: DateTime
+  orders: [Order]!
+  availabilities: [Availability]!
+}
+
+enum ClientType {
+  RESIDENT
+  TOURIST
+  PROFESSIONAL
+}
+
+enum UserRole {
+  CLIENT
+  ADMIN
+}
+
+type Query {
+  findAll: [User!]!
+  findOne(id: Int!): User!
+  order(id: Int!): Order!
+  optionType(id: Int!): OptionType!
+  offer(id: Int!): Offer!
+  offerType(id: Int!): OfferType!
+  delivery(id: Int!): Delivery!
+  availability(id: Int!): Availability!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  removeUser(id: Int!): User!
+  createOrder(createOrderInput: CreateOrderInput!): Order!
+  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
+  removeOrder(id: Int!): Order!
+  createOptionType(createOptionTypeInput: CreateOptionTypeInput!): OptionType!
+  updateOptionType(updateOptionTypeInput: UpdateOptionTypeInput!): OptionType!
+  removeOptionType(id: Int!): OptionType!
+  createOffer(createOfferInput: CreateOfferInput!): Offer!
+  updateOffer(updateOfferInput: UpdateOfferInput!): Offer!
+  removeOffer(id: Int!): Offer!
+  createOfferType(createOfferTypeInput: CreateOfferTypeInput!): OfferType!
+  updateOfferType(updateOfferTypeInput: UpdateOfferTypeInput!): OfferType!
+  removeOfferType(id: Int!): OfferType!
+  createDelivery(createDeliveryInput: CreateDeliveryInput!): Delivery!
+  updateDelivery(updateDeliveryInput: UpdateDeliveryInput!): Delivery!
+  removeDelivery(id: Int!): Delivery!
+  createAvailability(createAvailabilityInput: CreateAvailabilityInput!): Availability!
+  updateAvailability(updateAvailabilityInput: UpdateAvailabilityInput!): Availability!
+  removeAvailability(id: Int!): Availability!
+}
+
+input CreateUserInput {
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String
+  phoneCode: Int!
+  phoneNumber: Int!
+  isOnWhatsApp: Boolean
+  adress: String
+  postCode: Int
+  city: String
+  clientType: ClientType
+  isActive: Boolean
+  acceptPublicity: Boolean
+  adminComm: String
+}
+
+input UpdateUserInput {
+  firstName: String
+  lastName: String
+  email: String
+  password: String
+  phoneCode: Int
+  phoneNumber: Int
+  isOnWhatsApp: Boolean
+  adress: String
+  postCode: Int
+  city: String
+  clientType: ClientType
+  isActive: Boolean
+  acceptPublicity: Boolean
+  adminComm: String
+  id: Int!
+}
+
+input CreateOrderInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateOrderInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateOptionTypeInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateOptionTypeInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateOfferInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateOfferInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateOfferTypeInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateOfferTypeInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateDeliveryInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateDeliveryInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateAvailabilityInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateAvailabilityInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
